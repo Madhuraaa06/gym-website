@@ -3,15 +3,184 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Us</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Header Styles */
+        .contactus-header {
+            background-image: url("Bright\ Yellow\ and\ Black\ Photographic\ Fitness\ Service\ Website.png");
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .contactus-header h2 {
+            font-size: 4rem;
+            text-decoration: underline;
+        }
+
+        /* Contact Form Styles */
+        .contactus {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            background-color: #757474;
+            padding: 20px;
+        }
+
+        .contactus .top-text {
+            font-size: 2rem;
+            text-align: center;
+            margin: 10px 0;
+            position: relative;
+            color: #333;
+        }
+
+        .contactus .top-text::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: orangered;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .contactus .top-text:hover::before {
+            width: 100%;
+        }
+
+        .contactus-elements {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            
+        }
+
+        .contactus-elements .left-side {
+            flex-basis: 48%;
+            
+        }
+
+        .contactus-elements .right-side {
+            flex-basis: 48%;
+            margin-right: 7px;
+        }
+
+        .contactus-elements input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: #ffffff;
+            border: 1px solid #afa2a2;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contactus-elements input[type="textarea"] {
+            height: 150px;
+        }
+
+        .contactus .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contactus .submit-button button {
+            padding: 10px 20px;
+            width: 30%;
+            background-color: orangered;
+            background-origin: padding-box;
+            border: 2px rgb(105, 32, 5) solid;
+            color: #fff;
+            
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contactus .submit-button button:hover{
+            background-color: rgb(105, 32, 5);
+        }
+
+        .map{
+            display: flex;
+            margin:40px;
+            justify-content: center;
+            
+        }
+        .map p{
+            margin-top: 10%;
+            width: 20%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contactus-header h2 {
+                font-size: 2.5rem;
+            }
+
+            .contactus-elements .left-side,
+            .contactus-elements .right-side {
+                flex-basis: 100%;
+            }
+        }
+    </style>
 </head>
 <body>
-    Welcome to this page
-    <p>my phone number</p>
-<<<<<<< HEAD
-    <p>my email </p>
-=======
-    <p>heyy babyy</p>
->>>>>>> a5c3f9a6eaae36ee1c091aa280c41e84c9cec9e2
+
+    <div class="contactus-header">
+        <h2>CONTACT</h2>
+    </div>
+
+
+    <div class="map">
+        <p>"Navigate Your Fitness Journey with Us: <br><span style="color: orangered;">Every Step Counts!</span> "</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.555743183117!2d72.90007818311688!3d19.084287311514455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62da38e777f%3A0x34c3a14c86f76434!2sGhatkopar%20Station%20(E)!5e0!3m2!1sen!2sin!4v1694965124021!5m2!1sen!2sin" width="60%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class="contactus">
+        <div class="top-text">
+            <span>GET IN</span>
+            <span style="color: orangered;">TOUCH</span>
+        </div>
+
+        <div class="contactus-elements">
+            <div class="left-side">
+                <input type="text" for="fname" name="fname" placeholder="First Name">
+                <input type="text" for="lname" name="lname" placeholder="Last Name">
+                <input type="email" for="email" name="email" placeholder="Email Address">
+                <input type="tel" for="number" name="number" maxlength="10" placeholder="Phone Number">
+            </div>
+            <div class="right-side">
+                <input type="textarea" placeholder="Your Message">
+            </div>
+        </div>
+
+
+        <div class="submit-button">
+            <button>Submit</button>
+        </div>
+    </div>
+
 </body>
 </html>
