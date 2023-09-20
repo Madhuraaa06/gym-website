@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <script src="https://kit.fontawesome.com/c308f0ca1f.js" crossorigin="anonymous"></script>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+        }
+
+        body{
+            width: 100%;
+            min-height: 100vh;
+            /* display: grid; */
+        }
+        
+        .heading{
+            background-image: url('images/heading.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            min-height: 500px;
+            /* text-align: center; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .head-tag{
+            font-size: 2rem;
+            padding-bottom: 30px;
+            color:rgba(245, 245, 245, 0.837);
+            text-decoration: underline;
+        }
+        .head-tag P{
+            padding-top: 20px;
+            font-size: 1.5rem;
+            /* text-decoration: d;s */
+        }
+        .info{
+            /* position: absolute; */
+            width: 90%;
+            padding-top:100px ;
+            /* max-width: 1200px; */
+            padding-bottom: 100px;
+
+        }
+        .info img{
+            max-width:500px;
+            max-height: 400px;
+            width:60%;
+            /* padding-top: 100px ; */
+            padding-left: 60px;
+            padding-right: 80px;
+            float:left;
+
+        }
+        .desc{
+            /* padding-top:100px ; */
+            /* padding-left: 60px; */
+            /* max-width: 500px; */
+
+        }
+
+        .desc h1,h3,p{
+            padding-left: 20px ;
+            padding:8px;
+            line-height: 26px;
+        }
+        .desc h3{
+            font-size: 22px;
+            font-weight: 500;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
+        }
+        .desc p{
+            font-size: medium;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+        }
+        .features{
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* padding-top: 100px; */
+        }   
+            
+        .title{   
+            text-align: center;
+            padding-top: 50px;
+            color: white;
+        }
+        .title h1{
+            font-size: 30px;
+            text-decoration: underline;
+        }
+        .title p{
+            font-size: 18px;
+            padding-top: 15px;
+        }
+
+        .img-row{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 50px;
+            /* flex-wrap: wrap; */
+
+        }
+        .img-row .icon{
+            /* display:block; */
+            text-align: center;
+            
+
+        }
+
+        .img-row .icon img{
+            width: 100px;
+            height: 100px;
+        }
+        .trainer{
+            padding-top: 100px;
+            /* padding-bottom: 10px; */
+        }
+        .tag{
+            text-align: center;
+            padding: 30px 0; /* Add padding to create space around the content */
+            background-color:beige;
+
+        }
+
+        .box1-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px 5px;
+            margin: 4% auto;
+            max-width: 100%;
+            width: 90%;
+        }
+
+        .box1-card {
+            /* flex-direction: column; */
+            max-width: 500px;
+            border: 2px;
+            margin: 10px;
+            background-color:rgb(235, 239, 239);
+            /* border-radius: 10px; */
+            padding: 10px ;
+            box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+            transition: 0.3s ease-in-out;
+        }
+
+        .box1-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* margin-bottom: 10px; */
+            
+        }
+
+        .box1-img img {
+            align-items: center;
+            max-width: 90%;
+            height: 300px;
+            /* top: -40px;  */
+            /* height: auto; */
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            /* transition: transform 0.3s ease-in-out; */
+        }
+
+        .box1-card:hover  {
+            transform: scale(1.1);
+        }
+        .name{
+            padding-bottom: 20px;
+        }
+        .name h2, p {
+            /* padding:8px; */
+            text-align: center;
+        }
+        .name h2{
+            padding-top: 20px;
+            padding-bottom: 10px;
+
+        }
+        .socials{
+            display: flex;
+            justify-content: center;
+            
+        }
+        .socials a{
+            padding:10px 20px;
+        }
+
+        .map{
+            /* display: flex; */
+            margin:40px 0px;
+            /* padding: 40px 70px; */
+            /* justify-content: center; */
+            height: auto;
+            width: 100%;
+            
+        }
+        .map p{
+            float: right;
+            margin-top: 10%;
+            width: 20%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+
+
+        @media (max-width: 991px)  {
+            .desc {
+                padding-left: 20px;
+
+            }
+        }
+
+        @media (max-width: 768px) {
+        
+        .info img{
+            width: 380px;
+            margin-bottom: 30px;
+        }
+        .desc{
+            /* margin-top: 20px; */
+            padding-left: 50px;
+        }
+
+        .img-row {
+            flex-direction: column; /* Change to a vertical layout */
+            align-items: center; /* Center align items vertically */
+        }
+
+        .img-row .icon {
+            margin-bottom: 20px; 
+        }
+
+        .img-row .icon img {
+            width: 80px; /* Adjust image size for smaller screens */
+            height: 80px;
+        }
+
+       .features {
+            min-height: auto; /* Remove the minimum height */
+            background-size: cover; /* Ensure the background image covers the entire container */
+            background-position: center; /* Center the background image */
+            padding-top: 30px; /* Adjust padding for smaller screens */
+        }
+
+        .title {
+            padding-top: 20px; /* Adjust padding for smaller screens */
+        }
+
+        .container{
+            /* height:1000px; */
+            width: 100%;
+        }
+
+        .box1-card{
+            margin-top: 8%;
+        }
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="head-tag">
+            <h1> ABOUT US</h1>
+            <P>Home > About</P>
+        </div>
+    </div>
+
+    <div class="info">
+        <img src="images/img.png" alt="workout ">
+        <div class="desc">
+            <h1>Welcome to Avengers Fitness</h1>
+            <h3>Our dedicated Ponigym areas and fitness experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</h3>
+            <p>Our fitness experts can help you discover new training techniques. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+        </div>
+        
+    </div>
+
+    
+    <div class="features" style="background-image:url(images/img2.png) ;">
+        <div class="title">
+            <h1>Why Choose Us</h1>
+            <p>Our fitness experts can help you discover new training techniques.</p>
+        </div>
+        <div class="img-row">
+            <div class="icon">
+                <img src="images/dumbell.png" alt="icon">
+                
+                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                
+            </div>
+
+            <div class="icon">
+                <img src="images/dumbell.png" alt="icon">
+                
+                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                
+            </div>
+
+            <div class="icon">
+                <img src="images/dumbell.png" alt="icon">
+                
+                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                
+            </div>
+
+            <div class="icon">
+                <img src="images/dumbell.png" alt="icon">
+                
+                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="trainer">
+        <div class="tag">
+            <h1>Our Trainer</h1>
+            <p>Our fitness experts can help you discover new training techniques.</p>
+        </div>
+    </div>
+    
+
+    <div class="box1-container">
+        <div class="box1-card">
+            <div class="box1-img">
+                
+                <img src="images/trainer-1.png">
+            
+            </div>
+            <div class="name">
+                <h2>STEPHAINE</h2>
+                <p>Gym Trainer</p>
+            </div>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram fa-xm" style="color: #f75971;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xm" style="color: #2363d1;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-xm" style="color: #0861fd;"></i></a>
+            </div>
+
+            
+
+        </div>
+
+        <div class="box1-card">
+            <div class="box1-img">
+                
+                <img src="images/trainer-1.png">
+            
+            </div>
+            <div class="name">
+                <h2>STEPHAINE</h2>
+                <p>Gym Trainer</p>
+            </div>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram fa-xm" style="color: #f75971;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xm" style="color: #2363d1;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-xm" style="color: #0861fd;"></i></a>
+            </div>
+
+            
+
+        </div>
+
+        <div class="box1-card">
+            <div class="box1-img">
+                
+                <img src="images/trainer-1.png">
+            
+            </div>
+            <div class="name">
+                <h2>STEPHAINE</h2>
+                <p>Gym Trainer</p>
+            </div>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram fa-xm" style="color: #f75971;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xm" style="color: #2363d1;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-xm" style="color: #0861fd;"></i></a>
+            </div>
+
+            
+
+        </div>
+
+        <div class="box1-card">
+            <div class="box1-img">
+                
+                <img src="images/trainer-1.png">
+            
+            </div>
+            <div class="name">
+                <h2>STEPHAINE</h2>
+                <p>Gym Trainer</p>
+            </div>
+
+            <div class="socials">
+                <a href="#"><i class="fa-brands fa-instagram fa-xm" style="color: #f75971;"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-xm" style="color: #2363d1;"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter fa-xm" style="color: #0861fd;"></i></a>
+            </div>
+
+            
+
+        </div>
+
+
+        
+    </div>
+
+    <div class="map">
+        <p>"Navigate Your Fitness Journey with Us: <br><span style="color: orangered;">Every Step Counts!</span> "</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.555743183117!2d72.90007818311688!3d19.084287311514455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62da38e777f%3A0x34c3a14c86f76434!2sGhatkopar%20Station%20(E)!5e0!3m2!1sen!2sin!4v1694965124021!5m2!1sen!2sin" width="60%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+</body>
+</html>
