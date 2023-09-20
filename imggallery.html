@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Times New Roman', Times, serif;
+            box-sizing: border-box;
+            
+        }
+        body{
+            background: linear-gradient(to bottom, #ffc79a79, #333);
+        
+        }
+        .imggallery-header {
+            background-image: url(images/26.png);
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .imggallery-header h2 {
+            font-size: 4rem;
+            text-decoration: underline;
+        }
+
+        .gallery{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin: 30px 20px 0px 20px;
+            }
+
+        .heading{
+            padding-bottom: 20px;
+            width: 50%;
+        }
+        .heading h3{
+            text-align: center;
+            font-size: 2.5em;
+            border-bottom:2px solid rgb(51, 51, 51);  
+
+        }
+        .heading h3 span{
+            color: orangered;
+            font-weight: bolder;
+        }
+
+        .gallery .pic-box{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .gallery .pic-box .pics-col{
+            display: flex;
+            flex-direction: column;
+            width: 30%;
+            margin: 5px;
+        }
+
+        .gallery .pic-box .pics-col2{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+        }
+
+        .gallery .pic-box img{
+            width: 100%;
+            border-radius: 10px;
+            padding: 15px;
+            height: max-content;
+            margin: 5px;
+            
+        }
+ 
+        .gallery .pic-box img{
+            width: 100%;
+            border-radius: 10px;
+            padding: 2px;
+            height: max-content;
+            position: relative; /* Add this to create an overlay */
+        }
+
+        .gallery .pic-box img:hover {
+           opacity: 0.7; 
+           transition: opacity 0.3s ease; 
+        }
+
+        /*responsive */
+        @media only screen and  (max-width: 1000px){
+        .gallery .pic-box{
+            flex-direction: column;
+        }
+
+        .gallery .pic-box .pics-col{
+            width: 100%;
+        }
+        .gallery .pic-box .pics-col2{
+            width: 100%;
+        }
+        }
+
+        @media only screen and  (max-width: 1000px){
+
+            .heading{
+            padding-bottom: 20px;
+            width: 100%;
+        }
+        .heading h3{
+            font-size: 1em;
+
+        }
+            
+        }
+        
+        
+        
+
+
+    </style>
+
+<style>
+    
+    .heading2{
+
+        font-size: 1.4em;
+        margin: 100px;
+        border: black solid 2px;
+        width: max-content;
+        margin-left: 30%;
+
+        
+
+
+    }
+    .box1-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        flex-wrap: wrap;
+        
+       
+    }
+
+    .box1-card {
+    
+        margin: 10px;
+        background-color:rgb(235, 223, 201);
+        border-radius: 10px;
+        padding: 0px 20px 50px 20px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        transition: 0.3s ease-in-out;
+        max-width: 300px; /* Limit card width on smaller screens */
+        width: 100%;
+        
+    }
+
+    .box1-img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+        
+    }
+
+    .box1-img img {
+        position: relative;
+        max-width: 100%;
+        top: -40px; 
+        height: auto;
+        border-radius: 10px;
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    .box1-card:hover img {
+        transform: scale(1.1);
+    }
+
+    h2, p {
+        text-align: center;
+    }
+
+    @media only screen and (max-width: 900px) {
+        .box1-card {
+            width: 100%;
+            margin-bottom: 10%;
+        }
+
+        .heading2 {
+            
+            font-size: 14px;
+            }
+    }
+
+
+
+</style>
+</head>
+<body>
+
+    <div class="imggallery-header">
+        <h2>FEATURES</h2>
+    </div>
+
+    <div class="gallery">
+        <div class="heading">
+            <h3>Photo <span>Gallery</span></h3>
+        </div>
+
+        <div class="pic-box">
+            <div class="pics-col">
+                <img src="images/10.png">
+                <img src="images/11.png">
+                <img src="images/12.png">
+                
+                
+                
+            </div>
+
+            <div class="pics-col2">
+
+                
+                <img src="images/15.png">
+                <img src="images/16.png">
+                <img src="images/17.png">
+                
+                
+            </div>
+
+            <div class="pics-col">
+                <img src="images/18.png">
+                <img src="images/19.png">
+                
+                <img src="images/21.png">
+                
+                
+            </div>
+        </div>
+    </div>
+    <div class="heading2">
+        <h2>OUR FEATURES FOR YOUUUU</h2>
+    </div>
+    <div class="box1-container">
+        
+        <div class="box1-card">
+            <div class="box1-img">
+                <a href="#">
+                    <img src="images/26.png">
+                </a>
+            </div>
+            <h2>feature 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
+                perspiciatis at magni dolore cupiditate odit quo impedit facilis
+                voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+            </p>
+        </div>
+
+        <div class="box1-card">
+            <div class="box1-img">
+                <a href="#">
+                    <img src="images/14.png">
+                </a>
+            </div>
+            <h2>feature 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
+                perspiciatis at magni dolore cupiditate odit quo impedit facilis
+                voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+            </p>
+        </div>
+        <div class="box1-card">
+            <div class="box1-img">
+                <a href="#">
+                    <img src="images/14.png">
+                </a>
+            </div>
+            <h2>feature 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
+                perspiciatis at magni dolore cupiditate odit quo impedit facilis
+                voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+            </p>
+        </div>
+
+        <div class="box1-card">
+            <div class="box1-img">
+                <a href="#">
+                    <img src="images/10.png">
+                </a>
+            </div>
+            <h2>feature 1</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
+                perspiciatis at magni dolore cupiditate odit quo impedit facilis
+                voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+            </p>
+        </div>
+
+        
+    </div>
+
+
+    
+</body>
+</html>
