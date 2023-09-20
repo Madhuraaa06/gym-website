@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services</title>
-    <script src="https://kit.fontawesome.com/c308f0ca1f.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit.fontawesome.com/c308f0ca1f.js" crossorigin="anonymous">
     <style>
-        *{
+        * {
             padding: 0;
             margin: 0;
             box-sizing: border-box;
         }
 
-        body{
-            width: 100%;
-            min-height: 100vh;
-            /* display: grid; */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
         }
 
-        .header{
+        /* Header Styles */
+        .header {
             background-image: url("images/heading.png");
             background-repeat: no-repeat;
             background-size: cover;
@@ -29,36 +29,39 @@
             align-items: center;
             text-align: center;
             color: #fff;
-            height:500px;
+            height: 500px;
         }
 
-        .header h1{
+        .header h1 {
             font-size: 3.5rem;
             padding-bottom: 15px;
-            color:rgba(245, 245, 245, 0.837);
             text-decoration: underline;
         }
-        .header P{
+
+        .header p {
             padding-top: 20px;
             font-size: 1.5rem;
-            /* text-decoration: d;s */
         }
 
-        .feature-tag{
+        /* Feature Styles */
+        .feature-tag {
             text-align: center;
             margin-top: 100px;
-            background-color: rgb(219, 215, 215);
+            background-color: #f0f0f0;
             padding: 25px;
         }
-        .feature-tag h3{
+
+        .feature-tag h3 {
             padding-bottom: 10px;
-            color: rgb(233, 45, 12);
+            color: #e72d0c;
         }
-        .feature-tag h1{
+
+        .feature-tag h1 {
             font-weight: 600;
-            color: rgb(44, 43, 43);
+            color: #2c2b2b;
         }
-        .feature{
+
+        .feature {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -68,59 +71,57 @@
             max-width: 100%;
             width: 90%;
         }
-        .box{
+
+        .box {
             max-width: 300px;
-            /* border: 2px; */
             margin: 10px;
-            background-color: rgba(83, 83, 83, 0.889);
-            /* border-radius: 10px; */
-            padding-bottom: 10px ;
+            background-color: #535353;
+            padding-bottom: 10px;
             box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
-            transition: 0.3s ease-in-out;
+            transition: transform 0.3s ease-in-out;
         }
 
-        .image{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin-bottom: 30px;
+        .box:hover {
+            transform: scale(1.05);
+            background-color: #434343;
         }
 
-        
+        .box .image img {
+            display: block;
+            margin: 0 auto;
+            max-width: 100%;
+            height: auto;
+        }
 
-        .box h1,p{
+        .box h1, .box p {
             text-align: center;
             padding: 10px;
-            
+            color: #fff;
         }
 
-        .box p{
-        
-            color:rgba(255, 255, 255, 0.675);
+        .box p {
+            color: rgba(255, 255, 255, 0.675);
         }
-        .box h1{
-            color: rgba(47, 46, 46, 0.999);
-        }
-        
-        .price-tag{
+
+        /* Price Styles */
+        .price-tag {
             text-align: center;
             margin-top: 100px;
-            background-color: rgb(219, 215, 215);
+            background-color: #f0f0f0;
             padding: 25px;
         }
 
-        .price-tag h3{
+        .price-tag h3 {
             padding-bottom: 10px;
-            color: rgb(233, 45, 12);
+            color: #e72d0c;
         }
 
-        .price-tag h1{
+        .price-tag h1 {
             font-weight: 600;
-            color: rgb(44, 43, 43);
+            color: #2c2b2b;
         }
 
-
-        .boxes{
+        .boxes {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
@@ -129,80 +130,70 @@
             margin: 6% auto;
             max-width: 100%;
             width: 100%;
-            
-        
-        }
-        .skewed{
-         padding-right: 15px;
-        padding-left: 15px;
-        text-align: center;
-        padding: 40px 30px 52px;
-        border: 1px solid #464646;
-        min-width: 250px;
-        /* -webkit-transform: skewY(-4deg); */
-        /* -ms-transform: skewY(-4deg); */
-        transform: skewY(-4deg);
-        /* -webkit-transition: all 0.5s; */
-        /* -o-transition: all 0.5s; */
-        /* transition: all 0.5s; */
-        margin-bottom: 30px;
-        /* position: relative; */
-        background-color:black ;
-        margin-right: 60px;
-        border: 3px solid gray;
-
         }
 
-        
+        .skewed {
+            padding-right: 15px;
+            padding-left: 15px;
+            text-align: center;
+            padding: 40px 30px 52px;
+            border: 1px solid #464646;
+            min-width: 250px;
+            transform: skewY(-4deg);
+            transition: transform 0.3s ease-in-out;
+            margin-bottom: 30px;
+            background-color: black;
+            margin-right: 60px;
+            border: 3px solid gray;
+        }
+
         .skewed:hover {
-        transform: skewY(-4deg) scale(1.1); /* Scale up and maintain skew on hover */
-        /* background-color: rgb(255, 85, 0); Change background color on hover */
+            transform: skewY(-4deg) scale(1.1);
+            /* Add any hover styles you prefer here */
         }
-            
-        
-        .price-box{
+
+        .price-box {
             transform: skewY(4deg);
-            
         }
 
-        
-
-        .price-box h3{
+        .price-box h3 {
             font-size: 25px;
             padding-bottom: 15px;
             color: white;
         }
 
-        .price{
+        .price {
             font-size: large;
-            color: rgb(255, 85, 0);
+            color: #ff5500;
         }
-        .price-box ul li{
+
+        .price-box ul li {
             list-style: none;
             padding: 10px;
             color: white;
-
         }
 
-        .price-box ul{
+        .price-box ul {
             padding-bottom: 30px;
         }
-        .buy-btn{
-        display: inline-block;
-        font-size: 14px;
-        padding: 17px 30px 16px;
-        color: #ffffff;
-        background: gray;
-        line-height: normal;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        font-weight: 700;
-        text-decoration: none;
+
+        .buy-btn {
+            display: inline-block;
+            font-size: 14px;
+            padding: 17px 30px 16px;
+            color: #ffffff;
+            background: gray;
+            line-height: normal;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-decoration: none;
         }
 
-        .buy-btn:hover{
-            background-color:rgb(255, 85, 0) ;
+        .buy-btn:hover {
+            background-color: #ff5500;
         }
+
 
     </style>
 </head>
