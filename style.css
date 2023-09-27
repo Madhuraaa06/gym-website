@@ -18,7 +18,7 @@
   
   /* Header Styles */
   .site-header {
-    position: fixed;
+    position: relative;
     width: 100%;
     background-color: #2c8eec;
     padding: 3rem 5rem;
