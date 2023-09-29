@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import Foot from './Components/Foot'; // 
+import Gallery from './Components/Gallery';
 
 
 
@@ -9,6 +10,8 @@ function App() {
     <div>
 
     
+      
+      <Gallery/>
       <Foot/>
 
     </div>

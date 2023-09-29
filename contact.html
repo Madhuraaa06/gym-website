@@ -4,26 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us</title>
-    <link rel="stylesheet" href="style.css">
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-    />
-    <script src="https://kit.fontawesome.com/c308f0ca1f.js" crossorigin="anonymous"></script>
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    
     <style>
         /* General Styles */
         body {
             margin: 0;
             padding: 0;
             font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
+            background: #222629
         }
 
         /* Header Styles */
@@ -49,11 +37,12 @@
 
         /* Contact Form Styles */
         .contactus {
-            background-color: #fff;
+            border: 2px solid white;
             border-radius: 10px;
             box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-            background-color: #757474;
+            
             padding: 20px;
+            
         }
 
         .contactus .top-text {
@@ -61,7 +50,8 @@
             text-align: center;
             margin: 10px 0;
             position: relative;
-            color: #333;
+            color: #efe5e5;
+            padding-bottom: 20px;
         }
 
         .contactus .top-text::before {
@@ -101,15 +91,15 @@
             width: 100%;
             padding: 10px;
             margin-bottom: 20px;
-            background-color: #333;
-            color: #ffffff;
+            
+            color: #0c0c0c;
             border: 1px solid #afa2a2;
             border-radius: 5px;
             font-size: 1rem;
         }
 
         .contactus-elements input[type="textarea"] {
-            height: 150px;
+            height: 200px;
         }
 
         .contactus .submit-button {
@@ -125,7 +115,6 @@
             background-origin: padding-box;
             border: 2px rgb(105, 32, 5) solid;
             color: #fff;
-            
             border-radius: 5px;
             cursor: pointer;
         }
@@ -133,14 +122,31 @@
             background-color: rgb(105, 32, 5);
         }
 
+        .text{
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:#b3ea65;
+            
+           
+        }
+
         .map{
             display: flex;
             margin:40px;
             justify-content: center;
+            padding-bottom: 80px;
             
+        }
+
+        .map iframe{
+            width: 70%;
         }
         .map p{
             margin-top: 10%;
+            color:antiquewhite;
             width: 20%;
             font-family: 'Times New Roman', Times, serif;
             font-size: 2rem;
@@ -155,6 +161,23 @@
             .contactus-elements .right-side {
                 flex-basis: 100%;
             }
+
+            .map{
+            display: flex;
+            
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 50px;
+            
+        }
+        .map p{
+            width: 100%;
+            text-align: center;
+        }
+
+        .map iframe{
+            width: 100%;
+        }
         }
     </style>
 </head>
@@ -164,17 +187,24 @@
         <h2>CONTACT</h2>
     </div>
 
+    
+
 
     <div class="map">
-        <p>"Navigate Your Fitness Journey with Us: <br><span style="color: orangered;">Every Step Counts!</span> "</p>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.555743183117!2d72.90007818311688!3d19.084287311514455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62da38e777f%3A0x34c3a14c86f76434!2sGhatkopar%20Station%20(E)!5e0!3m2!1sen!2sin!4v1694965124021!5m2!1sen!2sin" width="60%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>"Navigate Your Fitness Journey with Us: <br><span style="color:#86C232;font-weight: bold;">Every Step Counts!</span> "</p>
 
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.555743183117!2d72.90007818311688!3d19.084287311514455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62da38e777f%3A0x34c3a14c86f76434!2sGhatkopar%20Station%20(E)!5e0!3m2!1sen!2sin!4v1694965124021!5m2!1sen!2sin"  height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+    </div>
+
+    <div class="text">
+        <p>We're here to assist you on your fitness journey. Whether you have questions, feedback, or need assistance, our team is ready to help!!</p>
     </div>
 
     <div class="contactus">
         <div class="top-text">
             <span>GET IN</span>
-            <span style="color: orangered;">TOUCH</span>
+            <span style="color: #86C232 ; font-weight: bold;">TOUCH</span>
         </div>
 
         <div class="contactus-elements">
@@ -191,71 +221,11 @@
 
 
         <div class="submit-button">
-            <button>Submit</button>
+            <button type="submit">Submit</button>
         </div>
     </div>
 
-    <footer class="footer-distributed">
-    
-        <div class="footer-left">
-  
-          <h3>Company<span>logo</span></h3>
-          
-          <p class="footer-links">
-            <a href="#" class="link-1">Home</a>
-            
-            <a href="#">Blog</a>
-          
-            <a href="#">Pricing</a>
-          
-            <a href="#">About</a>
-            
-            
-            
-            <a href="#">Contact</a>
-          </p>
-  
-          <!-- <p class="footer-company-name">Company Name © 2015</p> -->
-        </div>
-  
-        <div class="footer-center">
-  
-          <div class="details">
-            <i class="fa fa-map-marker"></i>
-            <p><span>Joshi Lane,Tilak road</span> Pantnagar, Ghatkopar(east)</p>
-          </div>
-  
-          <div class="details">
-            <i class="fa fa-phone"></i>
-            <p>+91 7045362152</p>
-          </div>
-  
-          <div class="details">
-            <i class="fa fa-envelope"></i>
-            <p><a href="mailto:support@company.com">avengers@fitness.com</a></p>
-          </div>
-  
-        </div>
-  
-        <div class="footer-right">
-  
-          <p class="footer-company-about">
-            <span>About the company</span>
-            At Avengers Fitness Gym, we are more than just a gym; we are a community of fitness enthusiasts dedicated to helping you achieve your health and wellness goals. Our mission is to empower individuals to lead healthier, happier lives through exercise, nutrition, and a supportive community. Also we have our second branch in THANE which also provides similar motives towards our members.
-          </p>
-  
-          <div class="footer-icons">
-  
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-twitter"></i></a>
-            <a href="#"><i class="fa fa-linkedin"></i></a>
-            <a href="#"><i class="fa fa-github"></i></a>
-  
-          </div>
-  
-        </div>
-  
-      </footer>
+   
 
 </body>
 </html>
