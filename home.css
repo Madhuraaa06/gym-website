@@ -1,5 +1,5 @@
 body{
-    background: #79797a 
+    background: #6c666e 
 
 }
 
@@ -96,7 +96,7 @@ body{
     width: 100%;
     margin-top: 20px;
     padding: 0px 30px;
-    background: #79797a 
+    background: #aaaab8 
     }
 
   
@@ -104,22 +104,45 @@ body{
   .about-one{
     float:right;
     width: calc(40% - 10px);
-    background: #645c6d;
     margin-right: 10px;
     margin-bottom: 10px;
     padding: 30px 22px 10px 30px;
   }
 
+  .bodybuilding{
+    background-image: url("images/40.png");
+    background-size: cover;
+  }
+
+  .weightlifting{
+    background-image: url("images/39.png");
+    background-size: cover;
+    background-position: 0px 20px;
+  }
+  .boxing{
+    background-image: url("images/41.png");
+    background-size: cover;
+    background-position: center;
+  }
+  .Crossfit{
+    background-image: url("images/42.png");
+    background-size:cover;
+   
+  }
+
   .about-one h3{
     color: white;
+    font-weight: bold;
   }
   .about-one p{
-    color: rgb(22, 21, 21);
-    font-weight: bolder;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-family:Georgia, 'Times New Roman', Times, serifs;
   }
 
   .about-data{
    display: flex;
+   color: black;
    flex-direction: column;
    justify-content: center;
    align-items: center;
@@ -187,15 +210,55 @@ body{
   }
 
   .section h4{
-    font-size: 1.3rem;
-    color: #645c6d;
+    font-size: 1.5rem;
+    color: #342f39;
     
   }
   .section h2{
-    font-size: 2rem;
+    font-size: 2.5rem;
     font-weight: bold;
     color: black;
     padding-bottom: 7px;
+
+  }
+
+  .bmicalc{
+    display: flex;
+    flex-direction: row;
+    border: 1px black solid;
+   
+    width: 80%;
+    margin: 10%;
+    padding: 20px;
+  }
+
+  .bmipic img{
+    height: 300px;
+    width: 400px;
+    
+  }
+  
+
+  .calc input,label{
+    border: black 2px solid;
+    background-color: transparent;
+    color: black;
+    margin: 10px;
+    height: 40px;
+    
+  }
+
+  .calc label{
+    font-weight: bold;
+    border: none;
+    font-size: 1.3rem;
+  }
+  
+  .calc button{
+    margin: 10px;
+    background-color: rgb(189, 156, 220);
+    border-radius: 5px;
+    height: 40px;
 
   }
 
@@ -206,9 +269,15 @@ body{
   }
   
   .top-text {
-    font-size: 24px;
+    font-size: 35px;
+    margin-top: 5%;
     font-weight: bold;
     margin-bottom: 20px;
+  }
+
+  .top-text:hover{
+    border-bottom: 1px orangered solid;
+   
   }
   
   .contactus-elements {
@@ -310,6 +379,11 @@ body{
         .about-one{
             
             width: 100%;
+        }
+
+        .bmicalc{
+          display: flex;
+          flex-direction: column;
         }
 
         
