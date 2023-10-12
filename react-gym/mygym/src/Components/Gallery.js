@@ -11,15 +11,15 @@ function Gallery() {
 </div>
 
 <div class="gallery">
-    <div class="heading">
+    <div class="galleryheading">
         <h3>Photo <span>Gallery</span></h3>
     </div>
 
     <div class="pic-box">
         <div class="pics-col">
-            <img src="images/10.g"/>
-            <img src="images/11.g"/>
-            <img src="images/12.g"/>
+            <img src="images/10.png"/>
+            <img src="images/11.png"/>
+            <img src="images/12.png"/>
             
             
             
@@ -28,16 +28,16 @@ function Gallery() {
         <div class="pics-col2">
 
             
-            <img src="images/15.g"/>
-            <img src="images/16.g"/>
-            <img src="images/17.g"/>
+            <img src="images/15.png"/>
+            <img src="images/16.png"/>
+            <img src="images/17.png"/>
             
             
         </div>
 
         <div class="pics-col">
-            <img src="images/18.g"/>
-            <img src="images/19.g"/>
+            <img src="images/18.png"/>
+            <img src="images/19.png"/>
             
             <img src="images/21.png"/>
             
@@ -48,10 +48,10 @@ function Gallery() {
 <div class="heading2">
     <h2>OUR FEATURES FOR YOUUUU</h2>
 </div>
-<div class="box1-container">
+<div class="box101-container">
     
-    <div class="box1-card">
-        <div class="box1-img">
+    <div class="box101-card">
+        <div class="box101-img">
             <a href="#">
                 <img src="images/26.png"/>
             </a>
@@ -63,8 +63,8 @@ function Gallery() {
         </p>
     </div>
 
-    <div class="box1-card">
-        <div class="box1-img">
+    <div class="box101-card">
+        <div class="box101-img">
             <a href="#">
                 <img src="images/14.png"/>
             </a>
@@ -75,8 +75,8 @@ function Gallery() {
             voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
         </p>
     </div>
-    <div class="box1-card">
-        <div class="box1-img">
+    <div class="box101-card">
+        <div class="box101-img">
             <a href="#">
                 <img src="images/14.png"/>
             </a>
@@ -88,8 +88,8 @@ function Gallery() {
         </p>
     </div>
 
-    <div class="box1-card">
-        <div class="box1-img">
+    <div class="box101-card">
+        <div class="box101-img">
             <a href="#">
                 <img src="images/10.png"/>
             </a>

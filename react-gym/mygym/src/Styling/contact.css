@@ -1,0 +1,181 @@
+
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #222629
+        }
+
+        /* Header Styles */
+        .contactus-header {
+            min-height: 500px;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: #fff;
+        }
+
+        .contactus-header h2 {
+            font-size: 4rem;
+            text-decoration: underline;
+        }
+
+        /* Contact Form Styles */
+        .contactus {
+            border: 2px solid white;
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+            
+            padding: 20px;
+            
+        }
+
+        .contactus .top-text {
+            font-size: 2rem;
+            text-align: center;
+            margin: 10px 0;
+            position: relative;
+            color: #efe5e5;
+            padding-bottom: 20px;
+        }
+
+        .contactus .top-text::before {
+            content: "";
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: orangered;
+            transition: width 0.5s ease-in-out;
+        }
+
+        .contactus .top-text:hover::before {
+            width: 100%;
+        }
+
+        .contactus-elements {
+            display: flex;
+            
+            flex-wrap: wrap;
+            justify-content: space-between;
+            
+            
+        }
+
+        .contactus-elements .left-side {
+            flex-basis: 48%;
+            
+        }
+
+        .contactus-elements .right-side {
+            flex-basis: 48%;
+            margin-right: 7px;
+        }
+        
+
+        .contactus-elements input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: #0c0c0c;
+            border: 1px solid #afa2a2;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+         .textarena{
+            height: 200px;
+            border-radius: 5px;
+            padding: 10px;
+            
+        }
+        
+        
+
+        .contactus .submit-button {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .contactus .submit-button button {
+            padding: 10px 20px;
+            width: 30%;
+            background-color: orangered;
+            background-origin: padding-box;
+            border: 2px rgb(105, 32, 5) solid;
+            color: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .contactus .submit-button button:hover{
+            background-color: rgb(105, 32, 5);
+        }
+
+        .text{
+            padding-bottom: 50px;
+            text-align: center;
+            font-size: 1.6rem;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+            color:#97162c;
+            
+           
+        }
+
+        .map{
+            display: flex;
+            flex-direction: row;
+            margin:40px;
+            justify-content: center;
+            padding-bottom: 80px;
+            
+        }
+
+        .map iframe{
+            width: 70%;
+        }
+        .map p{
+            margin-top: 10%;
+            color:antiquewhite;
+            width: 20%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .contactus-header h2 {
+                font-size: 2.5rem;
+            }
+
+            .contactus-elements .left-side,
+            .contactus-elements .right-side {
+                flex-basis: 100%;
+            }
+
+            .map{
+            display: flex;
+            
+            justify-content: center;
+            flex-direction: column;
+            padding-bottom: 50px;
+            
+        }
+        .map p{
+            width: 100%;
+            text-align: center;
+        }
+
+        .map iframe{
+            width: 100%;
+        }
+        }
+    

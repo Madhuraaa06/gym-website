@@ -1,0 +1,34 @@
+
+.carousel-item img {
+    max-height: 500px; /* Adjust the value as needed */
+    margin: 0 auto; /* Center the image horizontally */
+    display: block; /* Remove any extra spacing */
+    opacity: 0.9;
+  }
+  .carousel-caption {
+    bottom: 40%;
+
+    }
+
+    .carousel-caption p{
+        font-size: 3rem;
+        font-weight: bold;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+  
+  .carousel-b{
+    width: max-content;
+    font-size: 1.4rem;
+    height: 50px;
+    font-weight: bold;
+    border: orangered 2px solid;
+    background-color: transparent;
+  }
+  
+
+  .carousel-b:hover{
+    background-color: orangered;
+  }
+
+  
