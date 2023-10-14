@@ -9,6 +9,8 @@ import Pricing from './Components/Pricing';
 import Home from './Components/Home';
 import Carousel from './Components/Carousel';
 import Navbar from './Components/Navbar';
+import Login from './Components/Login';
+
 
 
 
@@ -36,7 +38,7 @@ function App() {
           <Route path="/Gallery" element={<Gallery />} />
           <Route path="/Pricing" element={<Pricing />} />
           <Route path="/Contact" element={<Contact />} />
-          
+          <Route path="/Login" element={<Login />} />
         </Routes>
 
         <Footer/>

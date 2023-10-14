@@ -56,10 +56,8 @@ function Gallery() {
                 <img src="images/26.png"/>
             </a>
         </div>
-        <h2>feature 1</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
-            perspiciatis at magni dolore cupiditate odit quo impedit facilis
-            voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+        <h2>Locker Rooms</h2>
+        <p> Our Gym typically have separate locker rooms for men and women, equipped with showers, changing areas, and lockers for members to store their belongings.
         </p>
     </div>
 
@@ -69,22 +67,18 @@ function Gallery() {
                 <img src="images/14.png"/>
             </a>
         </div>
-        <h2>feature 1</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
-            perspiciatis at magni dolore cupiditate odit quo impedit facilis
-            voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+        <h2>Sauna/Steam Room</h2>
+        <p>Our gym include saunas or steam room in their locker room areas for relaxation and post-workout recovery.
         </p>
     </div>
     <div class="box101-card">
         <div class="box101-img">
             <a href="#">
-                <img src="images/14.png"/>
+                <img src="images/18.png"/>
             </a>
         </div>
-        <h2>feature 1</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
-            perspiciatis at magni dolore cupiditate odit quo impedit facilis
-            voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+        <h2>Nutrition Counselling</h2>
+        <p> Our gym provide access to nutritionists or dietitians who can offer guidance on healthy eating and meal planning.
         </p>
     </div>
 
@@ -94,10 +88,8 @@ function Gallery() {
                 <img src="images/10.png"/>
             </a>
         </div>
-        <h2>feature 1</h2>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia in,
-            perspiciatis at magni dolore cupiditate odit quo impedit facilis
-            voluptate excepturi laborum veniam, quasi iste! Assumenda, illum!
+        <h2>Crossfit-Session</h2>
+        <p>CrossFit is a high-intensity fitness program that combines elements of weightlifting, cardio, and functional movements. Our gym have some specific features and equipment tailored to the CrossFit methodology.
         </p>
     </div>
 

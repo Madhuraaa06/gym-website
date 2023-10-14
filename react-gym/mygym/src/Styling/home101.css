@@ -375,7 +375,13 @@ body{
             justify-content: center;
             align-items: center;
             padding: 4rem 4rem;
+            margin: 5%;
           }
+
+          .section p{
+            text-align: justify;
+          }
+
 
           .box2-card{
             position: relative;

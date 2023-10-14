@@ -35,21 +35,21 @@ function About() {
             <div className="icon">
             <img src={"images/10.png"} alt="icon" style={{ mixBlendMode: 'multiply' }} />
 <h1>WeightLifting</h1>
-                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                <h3>Our gym is designed for weightlifting, is a fitness facility that primarily focuses on strength and resistance training.</h3>
                 
             </div>
 
             <div className="icon">
             <img src={""} alt="icon" style={{ mixBlendMode: 'multiply' }} />
 <h1>Specific Muscles</h1>
-                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                <h3>You can focus and train on specific group of muscles and strengthen them </h3>
                 
             </div>
 
             <div className="icon">
             <img src={""} alt="icon" style={{ mixBlendMode: 'multiply' }} />
  <h1>Flex Your Muscles</h1>
-                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                <h3>Our gym provides good lightings and big mirror where you can flex your muscles.</h3>
             
             </div>
 
@@ -57,7 +57,7 @@ function About() {
             <img src={""} alt="icon" style={{ mixBlendMode: 'multiply' }} />
 
                 <h1>Cardio</h1>
-                <h3>Event Calendar and Event Calendar Pro full support out of the box.</h3>
+                <h3>We provide various cardio machine to keep up your health and burn those calories</h3>
                 
             </div>
         </div>

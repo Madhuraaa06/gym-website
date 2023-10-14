@@ -9,7 +9,7 @@ function Pricing() {
   
 
         <h1>Services</h1>
-        <p>Home `&gt;` Services</p>
+        <p>Home &gt; Services</p>
     </div>
 
     <div className="feature-tag">
@@ -23,31 +23,31 @@ function Pricing() {
                 <img src="images/strength.png" alt="image"/>
             </div>
             <h1>Strength Training</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis</p>
+            <p> Our Gym provide a selection of weightlifting equipment, including free weights (dumbbells, barbells), weight machines, and resistance bands, to help members build and tone their muscles.</p>
         </div>
 
         <div className="box">
             <div className="image">
                 <img src="images/strength.png" alt="image"/>
             </div>
-            <h1>Strength Training</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis</p>
+            <h1>Personal Training</h1>
+            <p>Our gym have personal trainers on staff who can provide customized workout plans, guidance, and motivation for individuals seeking more personalized fitness instruction.</p>
         </div>
 
         <div className="box">
             <div className="image">
                 <img src="images/strength.png" alt="image"/>
             </div>
-            <h1>Strength Training</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis</p>
+            <h1>Group Exercise</h1>
+            <p>Our gym offer a variety of group fitness classes, such as yoga, spinning, Zumba, aerobics, and more, led by certified instructors.</p>
         </div>
 
         <div className="box">
             <div className="image">
                 <img src="images/strength.png" alt="image"/>
             </div>
-            <h1>Strength Training</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut dolore facilisis</p>
+            <h1>CardioVascular Equipment</h1>
+            <p>Our gym typically have a range of cardio machines such as treadmills, stationary bikes, elliptical trainers, and rowing machines to help members improve their cardiovascular fitness.</p>
         </div>
     </div>
 

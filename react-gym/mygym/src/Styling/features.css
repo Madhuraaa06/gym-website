@@ -163,6 +163,7 @@
             transition: 0.3s ease-in-out;
             max-width: 300px; /* Limit card width on smaller screens */
             width: 100%;
+            min-height: 450px;
             
         }
     
@@ -203,6 +204,14 @@
                 
                 font-size: 14px;
                 }
+        }
+
+        @media only screen and (max-width: 3000px) {
+            .box101-card {
+                width: 100%;
+                max-width: 40%;
+                margin-bottom: 6%;
+            }
         }
     
     
