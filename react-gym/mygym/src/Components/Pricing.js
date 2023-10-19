@@ -67,11 +67,11 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
                 </ul>
                 <a href="#" className="buy-btn">
                     Enroll Now
@@ -87,11 +87,11 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
                 </ul>
                 <a href="#" className="buy-btn">
                     Enroll Now
@@ -107,11 +107,11 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
                 </ul>
                 <a href="#" className="buy-btn">
                     Enroll Now
