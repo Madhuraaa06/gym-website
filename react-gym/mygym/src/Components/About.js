@@ -6,7 +6,7 @@ import bgimage from "./11.png"
 function About() {
     
   return (
-    <div>
+    <div className='body'>
       
     <div className="heading" >
         <div className="head-tag">
@@ -16,7 +16,7 @@ function About() {
     </div>
 
     <div className="info">
-        <img src="images/img.png" alt="workout "/>
+        <img src="images/14.png" alt="workout "/>
         <div className="desc">
             <h1>Welcome to Avengers Fitness</h1>
             <h3>Our dedicated Ponigym areas and fitness experts can help you discover new training techniques and exercises that offer a dynamic and efficient full-body workout.</h3>
