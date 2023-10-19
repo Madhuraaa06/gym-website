@@ -20,7 +20,7 @@ function Pricing() {
     <div className="feature">
         <div className="box">
             <div className="image">
-                <img src="images/strength.png" alt="image"/>
+                <img src="images/strength.png" alt="img101"/>
             </div>
             <h1>Strength Training</h1>
             <p> Our Gym provide a selection of weightlifting equipment, including free weights (dumbbells, barbells), weight machines, and resistance bands, to help members build and tone their muscles.</p>
@@ -28,7 +28,7 @@ function Pricing() {
 
         <div className="box">
             <div className="image">
-                <img src="images/strength.png" alt="image"/>
+                <img src="images/strength.png" alt="img101"/>
             </div>
             <h1>Personal Training</h1>
             <p>Our gym have personal trainers on staff who can provide customized workout plans, guidance, and motivation for individuals seeking more personalized fitness instruction.</p>
@@ -36,7 +36,7 @@ function Pricing() {
 
         <div className="box">
             <div className="image">
-                <img src="images/strength.png" alt="image"/>
+                <img src="images/strength.png" alt="img101"/>
             </div>
             <h1>Group Exercise</h1>
             <p>Our gym offer a variety of group fitness classes, such as yoga, spinning, Zumba, aerobics, and more, led by certified instructors.</p>
@@ -44,7 +44,7 @@ function Pricing() {
 
         <div className="box">
             <div className="image">
-                <img src="images/strength.png" alt="image"/>
+                <img src="images/strength.png" alt="img101"/>
             </div>
             <h1>CardioVascular Equipment</h1>
             <p>Our gym typically have a range of cardio machines such as treadmills, stationary bikes, elliptical trainers, and rowing machines to help members improve their cardiovascular fitness.</p>
@@ -67,13 +67,13 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
                 </ul>
-                <a href="#" className="buy-btn">
+                <a href="/" className="buy-btn">
                     Enroll Now
                 </a>
             </div>
@@ -87,13 +87,13 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
                 </ul>
-                <a href="#" className="buy-btn">
+                <a href="/" className="buy-btn">
                     Enroll Now
                 </a>
             </div>
@@ -107,13 +107,13 @@ function Pricing() {
                     
                 </div>
                 <ul>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Unlimited equipment</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Crossfit sessions</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Experienced trainers</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> BMI reports</li>
-                    <li><i className="fa-light fa-check fa-xs"></i><span>✓</span> Diet consultation</li>
+                    <li><span>✓</span> Unlimited equipment</li>
+                    <li><span>✓</span> Crossfit sessions</li>
+                    <li><span>✓</span> Experienced trainers</li>
+                    <li><span>✓</span> BMI reports</li>
+                    <li><span>✓</span> Diet consultation</li>
                 </ul>
-                <a href="#" className="buy-btn">
+                <a href="/" className="buy-btn">
                     Enroll Now
                 </a>
             </div>
