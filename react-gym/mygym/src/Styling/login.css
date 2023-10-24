@@ -282,6 +282,8 @@ body {
 	color: #fbfdff;
 	background: #a7e245;
 	transform: translateX(-30%);
+	z-index: 1;
+	position: relative;;
 }
 
 .btn-signup {

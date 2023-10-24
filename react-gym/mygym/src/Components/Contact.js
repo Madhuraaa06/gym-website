@@ -24,10 +24,10 @@ function Contact() {
         <h2>CONTACT</h2>
       </div>
 
-      <div className="map">
+      <div className="cmap">
         <p>
           "Navigate Your Fitness Journey with Us: <br />
-          <span style={{ color: '#bc1e39', fontWeight: 'bold' }}>Every Step Counts!</span>"
+          <span style={{ color: 'ORANGERED', fontWeight: 'bold' }}>Every Step Counts!</span>"
         </p>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13326.555743183117!2d72.90007818311688!3d19.084287311514455!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c62da38e777f%3A0x34c3a14c86f76434!2sGhatkopar%20Station%20(E)!5e0!3m2!1sen!2sin!4v1694965124021!5m2!1sen!2sin"
@@ -46,7 +46,7 @@ function Contact() {
       <div className="contactus">
         <div className="top-text">
           <span>GET IN</span>
-          <span style={{ color: '#bc1e39', fontWeight: 'bold' }}>TOUCH</span>
+          <span style={{ color: 'orangered', fontWeight: 'bold' }}>TOUCH</span>
         </div>
 
         <form ref={form} onSubmit={sendemail} className="contactus-elements">

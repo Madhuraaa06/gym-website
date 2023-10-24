@@ -5,7 +5,7 @@ function Pricing() {
   return (
     <div>
       
-      <div className="header" style={{ backgroundImage: 'url(images/heading.png)' }}>
+      <div className="header" style={{ backgroundImage: 'url(images/pricing.png)' }}>
   
 
         <h1>Services</h1>

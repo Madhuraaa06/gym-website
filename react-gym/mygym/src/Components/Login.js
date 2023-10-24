@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
-
 import { useNavigate } from 'react-router-dom';
+
 import '../Styling/login.css';
+import Popup from './Popup';
 
 const Login = () => {
+  const [showPopup, setShowPopup] = useState(false);
   const [activeForm, setActiveForm] = useState('login');
+  const [popupText, setPopupText] = useState('');
   const [credentials, setCredentials] = useState({ name: "", email: "", password: "", cpassword: "" })
 
   const navigate = useNavigate();
@@ -22,35 +25,85 @@ const Login = () => {
   const json = await response.json();
   console.log(json);
 
+  if (json.message === 'Sorry, user already exists!') {
+    // If login is successful, show the popup
+    setPopupText("Sorry,The user already exists!")
+    setShowPopup(true);
+    
+    
+    
+    
+  } else {
+    // Handle unsuccessful login (optional)
+    setPopupText("You have successfully created an account.")
+    setShowPopup(true);
+    
+
+    
+    
   }
+  e.target.reset();
+
+  }
+  setTimeout(() => {
+    setShowPopup(false);
+    setPopupText(''); 
+    navigate("/")
+    // Clear the popup text
+  }, 7000);
 
 
   const handleSubmit1 = async (e) => {
     e.preventDefault();
-
-  const response = await fetch(`http://localhost:5001/auth/login/`, {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({email: credentials.email, password: credentials.password})
-            });
-  const json = await response.json();
-  console.log(json);
-
+  
+    const response = await fetch(`http://localhost:5001/auth/login/`, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email: credentials.email, password: credentials.password })
+    });
+  
+    const json = await response.json();
+    console.log(json);
+  
+    if (json.message === "User logged in successfully") {
+      // If login is successful, show the popup
+      setPopupText("You have successfully logged in.")
+      setShowPopup(true);
+      
+      
+      
+    } else {
+      // Handle unsuccessful login (optional)
+      console.log("Login failed");
+      setPopupText("Sorry,Incorrect Information!!!Try again")
+      setShowPopup(true);
+      
+    }
+    e.target.reset();
   }
-
+  setTimeout(() => {
+    setShowPopup(false);
+    setPopupText('');
+    navigate("/") // Clear the popup text
+  }, 7000);
+ 
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
   }
   const switchForm = (form) => {
     setActiveForm(form);
   };
+  const handleClosePopup =()=>{
+    setShowPopup(false)
+    navigate("/")
+  }
 
   return (
     <>
       <section className="forms-section">
-        <h1 className="section-title">Animated Forms</h1>
+        
         <div className="forms">
           <div className={`form-wrapper ${activeForm === 'login' ? 'is-active' : ''}`}>
             <button
@@ -62,7 +115,9 @@ const Login = () => {
               <span className="underline"></span>
             </button>
             <form  onSubmit={handleSubmit1} className="form form-login">
+            
               <fieldset>
+              {showPopup && <Popup onClose={handleClosePopup} text={popupText} />}
                 <legend>Please, enter your email and password for login.</legend>
                 <div className="input-block">
                   <label htmlFor="login-email">E-mail</label>
@@ -72,11 +127,13 @@ const Login = () => {
                   <label htmlFor="login-password">Password</label>
                   <input id="password" name='password' type="password" onChange={onChange} required />
                 </div>
-              </fieldset>
+              
               <button type="submit" className="btn-login">
                 Login
               </button>
+              </fieldset>
             </form>
+            
           </div>
 
           <div className={`form-wrapper ${activeForm === 'signup' ? 'is-active' : ''}`}>
@@ -90,6 +147,7 @@ const Login = () => {
             </button>
             <form  onSubmit={handleSubmit} className="form form-signup">
               <fieldset>
+              {showPopup && <Popup onClose={handleClosePopup} text={popupText} />}
                 <legend>
                   Please, enter your email, password, and password confirmation for sign up.
                 </legend>
@@ -117,6 +175,7 @@ const Login = () => {
           </div>
         </div>
       </section>
+     
     </>
   );
 };

@@ -76,7 +76,7 @@ function About() {
         <div className="box1-card">
             <div className="box1-img">
                 
-                <img src="images/trainer-1.png"/>
+                <img src="images/44.png"/>
             
             </div>
             <div className="name">
@@ -97,7 +97,7 @@ function About() {
         <div className="box1-card">
             <div className="box1-img">
                 
-                <img src="images/trainer-1.png"/>
+                <img src="images/45.png"/>
             
             </div>
             <div className="name">
@@ -118,7 +118,7 @@ function About() {
         <div className="box1-card">
             <div className="box1-img">
                 
-                <img src="images/trainer-1.png"/>
+                <img src="images/46.png"/>
             
             </div>
             <div className="name">
@@ -136,7 +136,7 @@ function About() {
 
         </div>
 
-        <div className="box1-card">
+        {/* <div className="box1-card">
             <div className="box1-img">
                 
                 <img src="images/trainer-1.png"/>
@@ -155,7 +155,7 @@ function About() {
 
             
 
-        </div>
+        </div> */}
 
 
 
