@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import $ from 'jquery';
 
-class RazorpayPayment extends Component {
+class Pay extends Component {
   componentDidMount() {
     // Load the Razorpay script dynamically
     const script = document.createElement('script');
@@ -34,8 +34,7 @@ class RazorpayPayment extends Component {
     rzp.on('payment.success', this.handlePaymentSuccess);
     rzp.on('payment.error', this.handlePaymentError);
 
-    // Trigger the Razorpay payment button click
-    $('.razorpay-payment-button').click();
+    // No need to trigger the Razorpay payment button click here
   };
 
   handlePaymentSuccess = (response) => {
@@ -48,13 +47,20 @@ class RazorpayPayment extends Component {
     console.error('Payment error:', error);
   };
 
+  handleButtonClick = () => {
+    // Trigger the Razorpay payment
+    const rzp = new window.Razorpay();
+    rzp.open();
+  };
+
   render() {
     return (
       <div>
-       
+        <p>Click the button below to initiate the payment:</p>
+        <button onClick={this.handleButtonClick}>Pay with Razorpay</button>
       </div>
     );
   }
 }
 
-export default RazorpayPayment;
+export default Pay;

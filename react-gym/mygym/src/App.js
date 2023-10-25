@@ -10,6 +10,8 @@ import Home from './Components/Home';
 import Carousel from './Components/Carousel';
 import Navbar from './Components/Navbar';
 import Login from './Components/Login';
+import Pay from './Components/Pay';
+
 
 
 
@@ -22,6 +24,7 @@ function App() {
     
 <BrowserRouter>
         <Navbar />
+        
         
         <Routes>
         <Route

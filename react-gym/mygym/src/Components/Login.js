@@ -30,8 +30,7 @@ const Login = () => {
     setPopupText("Sorry,The user already exists!")
     setShowPopup(true);
     
-    
-    
+     
     
   } else {
     // Handle unsuccessful login (optional)
@@ -48,7 +47,7 @@ const Login = () => {
   setTimeout(() => {
     setShowPopup(false);
     setPopupText(''); 
-    navigate("/")
+    
     // Clear the popup text
   }, 7000);
 
@@ -73,6 +72,11 @@ const Login = () => {
       setShowPopup(true);
       
       
+      setTimeout(() => {
+        setShowPopup(false);
+        setPopupText(''); // Clear the popup text
+        navigate("/"); // Redirect to the homepage
+      }, 2000);
       
     } else {
       // Handle unsuccessful login (optional)
@@ -80,14 +84,15 @@ const Login = () => {
       setPopupText("Sorry,Incorrect Information!!!Try again")
       setShowPopup(true);
       
+      setTimeout(() => {
+        setShowPopup(false);
+        setPopupText('');
+         // Clear the popup text
+      }, 7000);
     }
     e.target.reset();
   }
-  setTimeout(() => {
-    setShowPopup(false);
-    setPopupText('');
-    navigate("/") // Clear the popup text
-  }, 7000);
+ 
  
   const onChange = (e) => {
     setCredentials({ ...credentials, [e.target.name]: e.target.value })
@@ -97,7 +102,7 @@ const Login = () => {
   };
   const handleClosePopup =()=>{
     setShowPopup(false)
-    navigate("/")
+    
   }
 
   return (
