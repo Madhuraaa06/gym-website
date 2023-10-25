@@ -11,6 +11,9 @@
     }
 
     .carousel-caption p{
+      color: rgb(7, 6, 33);
+text-shadow: -1px -1px 0 rgb(181, 183, 255), 1px -1px 0 rgb(181, 183, 255), -1px 1px 0 rgb(181, 183, 255), 1px 1px 0 rgb(181, 183, 255);
+
         font-size: 3rem;
         font-weight: bold;
         font-family: 'Times New Roman', Times, serif;
@@ -23,13 +26,15 @@
     height: 50px;
     font-weight: bold;
     padding: 10px;
+    color: aliceblue;
     border: rgb(19, 18, 18) 2px solid;
-    background-color: orangered;
+    background-color: rgb(11, 11, 58);
   }
   
 
   .carousel-b:hover{
-    background-color: orangered;
+    color: rgb(7, 6, 33);
+    background-color: rgb(172, 172, 255);
   }
 
   

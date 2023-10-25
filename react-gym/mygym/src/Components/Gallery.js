@@ -12,7 +12,7 @@ function Gallery() {
 
 <div class="gallery">
     <div class="galleryheading">
-        <h3>Photo <span>Gallery</span></h3>
+        <h3>Photo <span style={{color:"#101027"}}>Gallery</span></h3>
     </div>
 
     <div class="pic-box">
@@ -57,7 +57,7 @@ function Gallery() {
             </a>
         </div>
         <h2>Locker Rooms</h2>
-        <p> Our Gym typically have separate locker rooms for men and women, equipped with showers, changing areas, and lockers for members to store their belongings.
+        <p className="box101p"> Our Gym typically have separate locker rooms for men and women, equipped with showers, changing areas, and lockers for members to store their belongings.
         </p>
     </div>
 
@@ -68,7 +68,7 @@ function Gallery() {
             </a>
         </div>
         <h2>Sauna/Steam Room</h2>
-        <p>Our gym include saunas or steam room in their locker room areas for relaxation and post-workout recovery.
+        <p className="box101p">Our gym include saunas or steam room in their locker room areas for relaxation and post-workout recovery.
         </p>
     </div>
     <div class="box101-card">
@@ -78,7 +78,7 @@ function Gallery() {
             </a>
         </div>
         <h2>Nutrition Counselling</h2>
-        <p> Our gym provide access to nutritionists or dietitians who can offer guidance on healthy eating and meal planning.
+        <p className="box101p"> Our gym provide access to nutritionists or dietitians who can offer guidance on healthy eating and meal planning.
         </p>
     </div>
 
@@ -89,7 +89,7 @@ function Gallery() {
             </a>
         </div>
         <h2>Crossfit-Session</h2>
-        <p>CrossFit is a high-intensity fitness program that combines elements of weightlifting, cardio, and functional movements. Our gym have some specific features and equipment tailored to the CrossFit methodology.
+        <p className="box101p">CrossFit is high-intensity fitness program that combines elements of  cardio, functional movements. We have some specific features and equipment tailored to CrossFit methodology.
         </p>
     </div>
 

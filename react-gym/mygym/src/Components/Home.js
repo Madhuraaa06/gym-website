@@ -107,8 +107,12 @@ function Home() {
 
         </div>
         <h2>Name abc</h2>
-        <p> instructor</p>
-        <p>icons facebook insta</p>
+        <p> Instructor</p>
+        <div className='iconsh'>
+              <i className="fa fa-twitter fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-facebook fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-instagram fa-xm" style={{ color: 'white' }}></i>
+            </div>
     </div>
     <div className="box2-card">
         <div className="box2-img">
@@ -117,8 +121,13 @@ function Home() {
 
         </div>
         <h2>Name abc</h2>
-        <p> instructor</p>
-        <p>icons facebook insta</p>
+        <p> Instructor</p>
+        
+            <div className='iconsh'>
+              <i className="fa fa-twitter fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-facebook fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-instagram fa-xm" style={{ color: 'white' }}></i>
+            </div>
     </div>
     <div className="box2-card">
         <div className="box2-img">
@@ -127,8 +136,12 @@ function Home() {
 
         </div>
         <h2>Name abc</h2>
-        <p> instructor</p>
-        <p>icons facebook insta</p>
+        <p> Instructor</p>
+        <div className='iconsh'>
+              <i className="fa fa-twitter fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-facebook fa-xm" style={{ color: 'white' }}></i>
+              <i className="fa fa-instagram fa-xm" style={{ color: 'white' }}></i>
+            </div>
     </div>
 
 
@@ -137,15 +150,15 @@ function Home() {
 
 <div className="bmicalc">
     <div className="calc">
-        <h2>Calculate your BMI</h2>
-        <p>Your Body Mass Index (BMI) is a measurement of the ratio of your weight to your height. It is a good way to gauge whether your weight is in a healthy proportion to your height. BMI helps determine any risk you may face if it's outside the healthy range.</p>
+        <h2 className='bmih2'>Calculate your BMI</h2>
+        <p className='bmip'>Your Body Mass Index (BMI) is a measurement of the ratio of your weight to your height. It is a good way to gauge whether your weight is in a healthy proportion to your height. BMI helps determine any risk you may face if it's outside the healthy range.</p>
         <input type="text" id="weight" placeholder="Weight in kg" value={weight} onChange={(e) => setWeight(e.target.value)} />
         <input type="text" id="height" placeholder="Height in cm" value={height} onChange={(e) => setHeight(e.target.value)} /><br />
         <button onClick={calculateBMI}>Calculate</button>
-        <label aria-placeholder="result">Result: {bmi}</label>
+        <label aria-placeholder="result" style={{color:'b9b9da'}}>Result: {bmi}</label>
     </div>
     <div className="bmipic">
-        <img src="images/43.png" alt="BMI" />
+        <img src="images/body.png" alt="BMI" />
     </div>
 </div>
 
