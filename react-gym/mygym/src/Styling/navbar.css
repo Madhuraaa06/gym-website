@@ -2,10 +2,10 @@
   display: flex;
   background-color: rgba(0, 0, 0, 0.875);
   overflow: hidden;
+  height:fit-content;
   justify-content: space-between; /* Center navlinks */
   align-items: center; /* Center vertically */
-  /* Add padding for spacing */
-  /* padding:auto 20px; */
+ 
   position: sticky;
   top: 0;
   z-index: 100;
@@ -52,8 +52,8 @@
 }
 .logo img{
   width: 130px; /* Adjust the logo size as needed */
-  height: 120px;
-  margin: 5px;
+  height: 90px;
+  margin: 2px;
 }
 
 @media screen and (max-width: 600px) {
