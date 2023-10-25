@@ -15,7 +15,12 @@ function Navbar() {
   };
 
   return (
-    <div>
+    <div className='nav'>
+      <div className="logo" id="mylogo">
+       <img src={"images/logo.png"} alt="icon"  />
+      </div>  
+
+
       <div className="topnav" id="myTopnav">
         <Link to="/" className={`nav-link ${activeLink === '/' ? 'active' : ''}`} onClick={() => handleLinkClick('/')}>Home</Link>
         <Link to="/About" className={`nav-link ${activeLink === '/About' ? 'active' : ''}`} onClick={() => handleLinkClick('/About')}>About</Link>
@@ -28,6 +33,8 @@ function Navbar() {
           <i className="fa fa-bars"></i>
         </a>
       </div>
+
+          
     </div>
   );
 }
