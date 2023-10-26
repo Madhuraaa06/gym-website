@@ -177,7 +177,7 @@ function Home() {
             <input type="text" for="lname" name="lname" placeholder="Last Name" />
             <input type="email" for="email" name="email" placeholder="Email Address" />
             <input type="tel" for="number" name="number" maxlength="10" placeholder="Phone Number" />
-            <input type="textarea" placeholder="Your Message" />
+            <input type="textarea" name="msg" placeholder="Your Message" />
             <div className="submit-button">
               <button>Submit</button>
             </div>
