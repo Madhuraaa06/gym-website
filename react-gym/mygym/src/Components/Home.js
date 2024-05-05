@@ -93,7 +93,7 @@ function Home() {
 
 </div>
 <div className="section">
-    <h2>Some heading </h2>
+    <h2>Trainers </h2>
     <h4>Get to know our trainers and all</h4>
     <p>
         Our dedicated team of trainers is here to guide and motivate you on your fitness journey. With years of experience and a passion for helping clients succeed,

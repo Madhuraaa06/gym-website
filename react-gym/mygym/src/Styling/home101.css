@@ -1,5 +1,5 @@
 body{
-    background: #6c666e 
+    background: #202121 
 
 }
 
@@ -62,13 +62,13 @@ body{
     border: rgb(8, 8, 8) 2px solid;
     color: rgb(231, 225, 225);
     text-decoration: none;
-    background: #242488 ;
+    background: #08081e ;
     padding: 0.7rem;
+    border-radius: 5px;
   }
 
   .details a:hover{
-
-    background-color: #101027 ;
+    background-color: #040446 ;
     color: rgb(224, 219, 219);
   }
   .details h2{
@@ -325,6 +325,7 @@ body{
   .contactus {
     text-align: center; /* Center-align the text within the top-text */
     margin-top: 20px;
+    background-color: #080811;
   }
   
   .top-text {
@@ -335,7 +336,7 @@ body{
   }
 
   .top-text:hover{
-    border-bottom: 1px #101027 solid;
+    border-bottom: 1px #6060eb solid;
    
   }
   
@@ -378,16 +379,16 @@ body{
   .contactus .submit-button button {
     padding: 10px 20px;
     width: 30%;
-    background-color: #101027 ;
+    background-color: #080811 ;
     background-origin: padding-box;
-    border: 2px rgb(105, 32, 5) solid;
+    border: 2px rgb(19, 161, 171) solid;
     color: #fff;
   
     border-radius: 5px;
     cursor: pointer;
 }
 .contactus .submit-button button:hover{
-    background-color: rgb(105, 32, 5);
+    background-color: rgb(5, 97, 105);
 }
  
   .right-side iframe {

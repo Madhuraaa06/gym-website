@@ -28,13 +28,14 @@ text-shadow: -1px -1px 0 rgb(181, 183, 255), 1px -1px 0 rgb(181, 183, 255), -1px
     padding: 10px;
     color: aliceblue;
     border: rgb(19, 18, 18) 2px solid;
-    background-color: rgb(11, 11, 58);
+    background-color: rgb(5, 5, 34);
+    border-radius: 10px;
   }
   
 
   .carousel-b:hover{
-    color: rgb(7, 6, 33);
-    background-color: rgb(172, 172, 255);
+    
+    background-color: rgb(24, 34, 95);
   }
 
   
